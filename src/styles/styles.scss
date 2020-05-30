@@ -1,3 +1,33 @@
-body {
-  background: pink;
-}
+/*!
+MAIN CSS
+- imports all bulma SASS + custom SCSS
+- minify for production to save kb's
+*/
+
+// dependencies
+@import "_framework/utilities/all";
+@import "_framework/base/all";
+@import "_framework/layout/section";
+@import "_framework/grid/columns";
+@import "_framework/elements/container";
+
+// plugins
+// @import "_plugins/odometer-theme-default";
+
+// base CSS
+@import "mixins";
+@import "fonts";
+@import "base";
+
+// custom CSS
+@import "globals";
+@import "components";
+@import "modules";
+@import "custom";
+
+// overrides
+@import "trumps";
+
+// dev (remove pre-production)
+@import "devtools";
+

@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
+import BannerHome from "../components/BannerHome"
 import Image from "../components/Image"
 import SEO from "../components/Seo"
 import "../styles/styles.scss"
@@ -9,6 +10,7 @@ import "../styles/styles.scss"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <BannerHome />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

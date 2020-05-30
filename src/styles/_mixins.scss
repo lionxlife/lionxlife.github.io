@@ -1,0 +1,38 @@
+/*!
+SCSS Mixins
+- assist custom SCSS
+*/
+
+// for resopnsive styling
+@mixin breakpoint($point) {
+	// mobile: up to 768px
+	// only use if you don't want to override mobile-only CSS
+	@if $point == mobile {
+		@media screen and (max-width: $tablet - 1px) { @content; }
+	}
+	// everything else
+	// $mobplus: from 480px
+	// $tablet: from 769px
+	// $desktop: from 1024px
+	// $widescreen: from 1216px
+	// $fullhd: from 1408px
+	@else {
+		@media screen and (min-width: $point) { @content; }
+	}
+}
+
+// standard animation
+@mixin animate($duration) {
+	@if $duration == default {
+		transition: all 0.2s ease-in-out;
+	}
+	@else {
+		transition: all $duration ease-in-out;
+	}
+}
+
+// background covers
+@mixin cover($url) {
+	background: url($url) no-repeat center center; 
+	background-size: cover;
+}

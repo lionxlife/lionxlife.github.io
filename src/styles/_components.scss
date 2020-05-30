@@ -1,0 +1,13 @@
+/*!
+COMPONENTS styling
+- naming convention: c-*
+- reusable pieces of code, usually smaller than modules
+- buttons, special heading styling, module visual enhancements
+
+	@include breakpoint($mobplus) {}
+	@include breakpoint($tablet) {}
+	@include breakpoint($desktop) {}
+	@include breakpoint($widescreen) {}
+	@include breakpoint($fullhd) {}
+*/
+

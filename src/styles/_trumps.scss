@@ -1,0 +1,144 @@
+/*!
+TRUMPS CSS
+- utility overrides, naming (t-*, though not limited to)
+- for responsiveness but naming brevity, the following naming convention is used
+'no suffix' applied always
+-1 tablet >
+-2 desktop >
+-3 widescreen >
+-4 fullhd >
+*/
+
+// misc
+.t-align {
+	&--mid { // need: t-relative 
+		top: 50%;
+		transform: translate(0, -50%);
+
+		&-1 { // need: t-relative
+			@include breakpoint($tablet) {
+				top: 50%;
+				transform: translate(0, -50%);
+			}
+		}
+	}
+	&--cen {  // need: t-relative 
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	&--cen-m {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&--mid-cen { // need: positioning class, relative or absolute
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.t-flex-align {
+	// since normal alignment doesn't work well in flex child containers
+	// due to no defined height, must use flex again
+	// usually only needed for tablet+ layouts
+	@include breakpoint($tablet) {
+		display: flex !important;
+
+		&--middle { align-items: center; }
+		&--center { justify-content: center; }
+	}
+}
+.img-100 {
+	width: 100%;
+	height: auto;
+}
+.t-width-100p { width: 100%; }
+.t-height-100p { height: 100%; }
+.t-bg-cover {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.t-visible { visibility: visible; }
+.t-opacity-100 { opacity: 1; }
+.t-pointer { cursor: pointer; }
+.t-cursor-def { cursor: default; }
+
+// text
+// .has-text-centered
+
+// styling
+.t-bg-white { background-color: white; }
+.t-bg-grey-light { background: $white-ter; }
+.t-bg-primary { background: $primary; }
+
+// positioning
+.t-relative { position: relative; }
+.t-absolute { position: absolute; }
+.t-fixed { position: fixed; }
+
+// layout
+// .is-flex
+// .is-block
+// .is-inline
+// .is-pulled-left
+// .is-pulled-right
+.t-flex {
+	&-1 {
+		@include breakpoint($tablet) {
+
+		}
+	}
+}
+.t-left { float: left; }
+.t-right { float: right; }
+.t-block { display: block; } // since .is-block has !important
+.t-inline-block { display: inline-block; } // since .is-inline-block has !important
+
+// block spacing
+.is-default {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+.is-sml {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+.is-med { // b/c framework styles apply for $desktop+
+	padding-top: 9rem;
+	padding-bottom: 9rem;
+}
+.is-lrg {  // b/c framework styles apply for $desktop+
+	padding-top: 18rem;
+	padding-bottom: 18rem;
+}
+.is-p0 {
+	// use for sections as their children has 0.75rem padding
+	padding-top: 0.75rem !important;
+	padding-bottom: 0.75rem !important;
+
+	&--top { padding-top: 0.75rem !important; }
+	&--bot { padding-bottom: 0.75rem !important; }
+}
+.is-none {
+	padding-top: 0;
+	padding-bottom: 0;
+
+	&--top { padding-top: 0; }
+	&--bot { padding-bottom: 0; }
+}
+
+// the no's
+.no {
+	&-m {
+		margin: 0 !important;
+		
+		&-b { margin-bottom: 0; }
+	}
+	&-list-style {
+		list-style: none !important;
+
+		li { padding: 0; }
+	}
+	&-overflow { overflow: hidden; }
+	&-outline { outline: none; }
+}

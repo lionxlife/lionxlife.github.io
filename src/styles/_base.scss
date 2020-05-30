@@ -1,0 +1,22 @@
+/*!
+BASE CSS
+- for any custom site-wide standards
+*/
+
+// fix mobile safari from changing font size when orientation is changed
+html { -webkit-text-size-adjust: 100%; }
+
+h1, h2, h3, h4, h5, p, li {
+	margin: 0 0 1rem;
+
+	&:last-child { margin: 0; }
+}
+
+.b-link {
+	color: $text;
+			
+	&:hover { 
+		text-decoration: none;
+		color: lighten($text, 15%);
+	}
+}

@@ -1,0 +1,19 @@
+/*!
+DEVTOOLS CSS
+- remove pre-production
+*/
+
+// width counter
+.fn-width {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	color: orangered;
+	opacity: .66;
+	font-size: 12px;
+	padding-left: 5px;
+	line-height: 1;
+
+	@include breakpoint($fullhd) { font-size: 18px; }
+}

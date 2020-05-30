@@ -1,0 +1,20 @@
+/*!
+Custom styling
+- styling that doesn't fit elsewhere (cu-*) or unique naming
+*/
+
+// TEMP
+
+// Colours
+.is-red-candy { color: $red-candy; }
+.is-red-pale { color: $red-pale; }
+.is-white-pale { color: $white-pale; }
+.is-navy-pale { color: $navy-pale; }
+.is-navy-dark { color: $navy-dark; }
+
+// Animations
+.an-opacity-1 { opacity: 1; }
+.an-opacity-0 { opacity: 0; }
+
+// Styling
+.cu-text-shadow { text-shadow: 0 0 8px rgba(0, 0, 0, 0.5); }

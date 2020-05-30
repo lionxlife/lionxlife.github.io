@@ -1,0 +1,31 @@
+// 1.5rem at $tablet $desktop $widescreen 16px = 24px
+// $fullhd 1.5rem with 20px = 30px
+// removing side padding due to width issues at BP change
+// ie: 960+2*24 = 1008, 1024 BP -scroll is 1004, 4px short
+// ie: 1152+2*24 = 1200, 1216 BP -scroll is 1196, 4px short
+// ie: 1344+2*30 = 1404, 1408 BP -scroll is 1388, 20px short
+// VP width is measured with scroll, when you can't even use space
+// container inside is centered. No padding issues.
+// might cause side padding issues with fluid containers.
+// fix by add another class to section for fluid containers.
+$section-padding: 3rem 1.5rem !default  
+$section-padding-medium: 9rem 1.5rem !default
+$section-padding-large: 18rem 1.5rem !default
+
+$section-padding-side-custom: 0
+
+.section
+  padding: $section-padding
+  // Responsiveness
+  +desktop
+    padding-left: $section-padding-side-custom
+    padding-right: $section-padding-side-custom
+    // Sizes
+    &.is-medium
+      padding: $section-padding-medium
+      padding-left: $section-padding-side-custom
+      padding-right: $section-padding-side-custom
+    &.is-large
+      padding: $section-padding-large
+      padding-left: $section-padding-side-custom
+      padding-right: $section-padding-side-custom
