@@ -16,9 +16,9 @@ export default () => {
                 your years.”
               </p>
               <p>
-                <a class="footer__twitter" title="later ;)">
+                {/* <a href="#" class="footer__twitter" title="later ;)">
                   <i class="fab fa-twitter"></i>
-                </a>{" "}
+                </a>{" "} */}
                 <strong>Lion X Life</strong> / Year{" "}
                 <span id="fn-footer-year">000</span>
               </p>
