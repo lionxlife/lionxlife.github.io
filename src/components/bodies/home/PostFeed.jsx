@@ -9,13 +9,13 @@ const MainPostBlock = () => {
   return (
     <div className="column is-12">
       <a
-        href="<%= url_for(post.path) %>"
+        href="/post"
         target="_self"
         className="m-pfeed__post is-block t-relative no-overflow"
       >
         <div
           className="m-pfeed__bg t-absolute"
-          style={{ backgroundImage: "url(/images/cover-temp.jpg)" }}
+          style={{ backgroundImage: "url(/images/cover-post-temp.jpg)" }}
         ></div>
         <div className="t-absolute m-pfeed__info">
           <h2 className="f-h2 has-text-white cu-text-shadow">post title</h2>

@@ -14,7 +14,7 @@ export default () => {
       {/* <!-- cover bg --> */}
       <div
         className="m-landing__cover"
-        style={{ backgroundImage: "url(/images/cover-temp.jpg)" }}
+        style={{ backgroundImage: "url(/images/cover-post-temp.jpg)" }}
       ></div>
 
       {/* <!-- mid block: heading --> */}
