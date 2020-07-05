@@ -59,7 +59,7 @@ typings/
 public/*
 # need some folders inside of public
 !public/images/
-!public/fontawesome/
+!public/vendor/
 
 # Mac files
 .DS_Store
