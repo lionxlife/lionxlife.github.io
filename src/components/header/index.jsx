@@ -1,14 +1,17 @@
 import React, { Fragment } from "react"
-import Logo from "./Logo"
-import Timer from "./Timer"
-import ProgressBar from "./ProgressBar"
+import Logo from "./logo"
+import Timer from "./timer"
+import ProgressBar from "./progressBar"
+import useScrollFunctionality from "./useScrollFunctionality"
 
 const Header = ({ siteTitle }) => {
+  const { refHeader, refProgressBar } = useScrollFunctionality()
+
   return (
     <Fragment>
-      <ProgressBar />
+      <ProgressBar refProgressBar={refProgressBar} />
 
-      <header className="header t-fixed" id="fn-header">
+      <header className="header t-fixed" ref={refHeader}>
         <div className="section is-p0 t-relative">
           {/* header contents */}
           <div className="container">
@@ -16,7 +19,6 @@ const Header = ({ siteTitle }) => {
               <div className="column">
                 <div className="header__container t-relative">
                   <Logo />
-
                   <Timer />
                 </div>
               </div>

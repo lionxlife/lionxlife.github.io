@@ -1,8 +1,8 @@
 import React from "react"
 
-export default () => {
+export default ({ refProgressBar }) => {
   return (
-    <div className="g-progress t-fixed" id="fn-progress">
+    <div className="g-progress t-fixed" ref={refProgressBar}>
       <div className="g-progress__bar" id="fn-bar"></div>
     </div>
   )

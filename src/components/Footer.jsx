@@ -1,4 +1,5 @@
 import React from "react"
+import { calcBlogYear } from "./header/timer/useTimer"
 
 export default () => {
   return (
@@ -20,7 +21,7 @@ export default () => {
                   <i className="fab fa-twitter"></i>
                 </a>{" "} */}
                 <strong>Lion X Life</strong> / Year{" "}
-                <span id="fn-footer-year">000</span>
+                <span id="fn-footer-year">{calcBlogYear()}</span>
               </p>
             </div>
           </div>

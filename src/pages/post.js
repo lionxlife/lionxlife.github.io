@@ -3,7 +3,7 @@ import SEO from "../components/Seo"
 // import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
-import Cover from "../components/covers/Cover"
+import Cover from "../components/covers"
 import WritingMain from "../components/bodies/post/WritingMain"
 import WritingFooter from "../components/bodies/post/WritingFooter"
 

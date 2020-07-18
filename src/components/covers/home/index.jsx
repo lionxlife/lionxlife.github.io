@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import ImageCover from "./ImageCover"
-import Loading from "./Loading"
-import NextButton from "./NextButton"
-import Bottom from "./Bottom"
-import Heading from "./heading/Heading"
+import ImageCover from "./imageCover"
+import Loading from "./loading"
+import NextButton from "./nextButton"
+import Bottom from "./bottom"
+import Heading from "./heading"
 
 export default () => {
   const [coverLoading, setCoverLoading] = useState(true)

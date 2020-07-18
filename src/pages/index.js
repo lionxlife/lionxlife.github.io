@@ -5,7 +5,7 @@ import SEO from "../components/Seo"
 
 import "../styles/styles.scss"
 import Layout from "../components/Layout"
-import Cover from "../components/covers/home/Cover"
+import Cover from "../components/covers/home"
 import PostFeedHeading from "../components/bodies/home/PostFeedHeading"
 import PostFeed from "../components/bodies/home/PostFeed"
 

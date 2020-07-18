@@ -15,9 +15,12 @@ const homeCoverHeading = ({ headingRef, initialWordAsArray }) => {
 
     // find character and show
     const headingCharNodesArray = [...$heading.childNodes]
+    console.log("headingCharNodesArray", headingCharNodesArray)
     headingCharNodesArray
-      .find(childNode => childNode.className === `char-hidden char-${char}`)
-      .setAttribute("class", `char-${char}`)
+      .find(
+        childNode => childNode.className === `char char-hidden char-${char}`
+      )
+      .setAttribute("class", `char char-${char}`)
 
     if (headingArray.length === 0) {
       clearInterval(headingInterval)
@@ -34,13 +37,14 @@ const homeCoverHeadingWordSwap = $heading => {
   const animate = (index, words) => {
     const timeout = setTimeout(function () {
       // execute code
-      $heading.innerText = words[index].word
+      $heading.innerHTML = `<span class="char-hash">#</span>${words[index].word}`
       $heading.style.opacity = words[index].opacity
 
       i++ // increment
       // end of array, exit loop
       if (i === words.length) {
         clearTimeout(timeout)
+        sessionStorage.setItem("heading_animation_done", true)
         return
       }
 
@@ -54,12 +58,18 @@ const homeCoverHeadingWordSwap = $heading => {
 
 /**
  * useHeadingAnimation
+ * 1000 is animation time of cover
  */
-export default initialWordAsArray => {
+export default ({ initialWordAsArray, coverLoading, headingAnimationDone }) => {
   const headingRef = useRef(null)
   useEffect(() => {
-    homeCoverHeading({ headingRef, initialWordAsArray })
-  }, [initialWordAsArray])
+    const animationDelay = window.setTimeout(() => {
+      if (!coverLoading && !headingAnimationDone)
+        homeCoverHeading({ headingRef, initialWordAsArray })
+    }, 1000)
+
+    return () => clearTimeout(animationDelay)
+  }, [initialWordAsArray, coverLoading, headingAnimationDone])
 
   return headingRef
 }

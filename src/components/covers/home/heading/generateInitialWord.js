@@ -1,17 +1,25 @@
-import React from "react"
+import React, { Fragment } from "react"
 
 /**
  * generateInitialWord
  */
-export default initialWordAsArray => {
-  return initialWordAsArray.map((letter, i) => {
-    return (
-      <span
-        key={i + letter}
-        className={`char-hidden char-${letter === "#" ? "hash" : letter}`}
-      >
-        {letter}
-      </span>
-    )
-  })
+export default ({ initialWordAsArray, headingAnimationDone }) => {
+  return headingAnimationDone ? (
+    <Fragment>
+      <span class="char-hash">#</span>forever
+    </Fragment>
+  ) : (
+    initialWordAsArray.map((letter, i) => {
+      return (
+        <span
+          key={i + letter}
+          className={`char char-hidden char-${
+            letter === "#" ? "hash" : letter
+          }`}
+        >
+          {letter}
+        </span>
+      )
+    })
+  )
 }
