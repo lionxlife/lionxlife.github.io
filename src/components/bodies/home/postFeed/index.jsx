@@ -1,5 +1,28 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
+
+export default ({ postList }) => {
+  return (
+    <section className="section is-p0--top is-sml">
+      <div className="container">
+        <div className="columns is-multiline">
+          {postList.edges.map(({ node }, i) => (
+            <Link to={node.fields.slug} key={i} className="link">
+              <div className="post-list">
+                <h1>{node.frontmatter.title}</h1>
+                <span>{node.frontmatter.date}</span>
+                <p>{node.excerpt}</p>
+              </div>
+            </Link>
+          ))}
+          {/* <MainPostBlock />
+          <PostPlaceHolderBlock />
+          <PostPlaceHolderBlock /> */}
+        </div>
+      </div>
+    </section>
+  )
+}
 
 /**
  * <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
@@ -89,19 +112,5 @@ const PostPlaceHolderBlock = () => {
         </div>
       </a>
     </div>
-  )
-}
-
-export default () => {
-  return (
-    <section className="section is-p0--top is-sml">
-      <div className="container">
-        <div className="columns is-multiline">
-          <MainPostBlock />
-          <PostPlaceHolderBlock />
-          <PostPlaceHolderBlock />
-        </div>
-      </div>
-    </section>
   )
 }
