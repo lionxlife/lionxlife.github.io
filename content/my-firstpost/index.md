@@ -1,9 +1,11 @@
 ---
 title: My first Blog post
 description: This post is related to the gatsbyjs
-date: "2018-12-02"
+postYear: 1210
+date: "2017-05-01"
 image: "cover.jpg"
 tags: ["javascript", "react", "gatsby"]
+wordCount: 785
 ---
 
 ## Why do we use it?

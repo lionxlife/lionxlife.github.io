@@ -37,8 +37,8 @@ exports.createPages = ({ actions, graphql }) => {
           console.log(result.errors)
           return reject(result.errors)
         }
-        const blogTemplate = path.resolve("./src/templates/blogPost.js")
-        const tagsTemplate = path.resolve("./src/templates/tags.js")
+        const blogTemplate = path.resolve("./src/templates/blogPost.jsx")
+        const tagsTemplate = path.resolve("./src/templates/tags.jsx")
         const posts = result.data.allMarkdownRemark.edges
 
         //All tags
@@ -51,7 +51,6 @@ exports.createPages = ({ actions, graphql }) => {
         })
         // Eliminate duplicate tags
         allTags = _.uniq(allTags)
-
         allTags.forEach((tag, index) => {
           createPage({
             path: `/${_.kebabCase(tag)}/`,
@@ -70,6 +69,7 @@ exports.createPages = ({ actions, graphql }) => {
               slug: node.fields.slug,
               prev: index === 0 ? null : posts[index - 1],
               next: index === result.length - 1 ? null : posts[index + 1],
+              type: "blog-post",
             }, // additional data can be passed via context
           })
         })

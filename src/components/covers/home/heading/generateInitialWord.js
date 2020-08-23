@@ -6,7 +6,7 @@ import React, { Fragment } from "react"
 export default ({ initialWordAsArray, headingAnimationDone }) => {
   return headingAnimationDone ? (
     <Fragment>
-      <span class="char-hash">#</span>forever
+      <span className="char-hash">#</span>forever
     </Fragment>
   ) : (
     initialWordAsArray.map((letter, i) => {

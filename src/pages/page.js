@@ -1,11 +1,10 @@
 import React from "react"
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 // import { Link } from "gatsby"
-
-import Layout from "../components/Layout"
-import Cover from "../components/covers"
-import WritingMain from "../components/bodies/post/WritingMain"
-import WritingFooter from "../components/bodies/post/WritingFooter"
+import Layout from "../components/layout"
+import Cover from "../components/covers/posts"
+import WritingMain from "../components/bodies/post/writingMain"
+import WritingFooter from "../components/bodies/post/writingFooter"
 
 const SecondPage = () => (
   <Layout>

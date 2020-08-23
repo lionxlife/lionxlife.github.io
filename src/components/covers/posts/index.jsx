@@ -1,18 +1,18 @@
 import React, { useState } from "react"
-import ImageCover from "./imageCover"
 import Loading from "../shared/loading"
-import NextButton from "../shared/nextButton"
-import Bottom from "../shared/bottom"
+import ImageCover from "./imageCover"
 import Heading from "./heading"
+import Bottom from "../shared/bottom"
+import NextButton from "../shared/nextButton"
 
-export default () => {
+export default ({ postInfo }) => {
   const [coverLoading, setCoverLoading] = useState(true)
 
   return (
     <section className="m-landing no-overflow t-relative">
       <Loading />
-      <ImageCover setCoverLoading={setCoverLoading} />
-      <Heading coverLoading={coverLoading} />
+      <ImageCover postInfo={postInfo} setCoverLoading={setCoverLoading} />
+      <Heading postInfo={postInfo} />
       <Bottom />
       <NextButton />
     </section>

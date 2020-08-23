@@ -15,7 +15,6 @@ const homeCoverHeading = ({ headingRef, initialWordAsArray }) => {
 
     // find character and show
     const headingCharNodesArray = [...$heading.childNodes]
-    console.log("headingCharNodesArray", headingCharNodesArray)
     headingCharNodesArray
       .find(
         childNode => childNode.className === `char char-hidden char-${char}`

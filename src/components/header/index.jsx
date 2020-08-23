@@ -4,12 +4,16 @@ import Timer from "./timer"
 import ProgressBar from "./progressBar"
 import useScrollFunctionality from "./useScrollFunctionality"
 
-const Header = ({ siteTitle }) => {
+const Header = ({ isPost, refs, siteTitle }) => {
   const { refHeader, refProgressBar } = useScrollFunctionality()
 
   return (
     <Fragment>
-      <ProgressBar refProgressBar={refProgressBar} />
+      <ProgressBar
+        isPost={isPost}
+        refProgressBar={refProgressBar}
+        refs={refs}
+      />
 
       <header className="header t-fixed" ref={refHeader}>
         <div className="section is-p0 t-relative">

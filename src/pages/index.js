@@ -1,11 +1,11 @@
 import React from "react"
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 import { graphql } from "gatsby"
 // import Image from "../components/Image"
 import "../styles/styles.scss"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import Cover from "../components/covers/home"
-import PostFeedHeading from "../components/bodies/home/PostFeedHeading"
+import PostFeedHeading from "../components/bodies/home/postFeedHeading"
 import PostFeed from "../components/bodies/home/postFeed"
 
 const IndexPage = ({ data }) => {
@@ -33,18 +33,19 @@ export const listQuery = graphql`
           }
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM Do YYYY")
             title
+            postYear
             image {
               childImageSharp {
-                resize(width: 1500, height: 1500) {
+                resize(width: 2000, quality: 75) {
                   src
-                }
-                fluid(maxWidth: 786) {
-                  ...GatsbyImageSharpFluid
                 }
               }
             }
+            wordCount
+            tags
+            date(formatString: "MMMM Do YYYY")
+            description
           }
         }
       }

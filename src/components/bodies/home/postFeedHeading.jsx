@@ -7,7 +7,7 @@ export default () => {
         <div className="columns">
           <div className="column has-text-centered" id="anchor-content">
             <h1 className="f-h1">
-              “<span className="is-red-pale">strange</span>words”
+              Words to me, you; <span className="is-red-pale">us</span>.
             </h1>
           </div>
         </div>

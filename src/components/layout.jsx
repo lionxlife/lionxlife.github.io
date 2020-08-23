@@ -9,9 +9,9 @@ import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Footer from "./Footer"
+import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageContext = {}, refs = {} }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -21,11 +21,15 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  useEffect(() => {}, [])
+  // useEffect(() => {}, [])
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        isPost={pageContext.type === "blog-post"}
+        siteTitle={data.site.siteMetadata.title}
+        refs={refs}
+      />
       <main>{children}</main>
       <Footer />
     </>

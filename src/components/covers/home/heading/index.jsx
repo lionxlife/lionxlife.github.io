@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import generateInitialWord from "./generateInitialWord"
 import useHeadingAnimation from "./useHeadingAnimation"
 
@@ -9,7 +9,10 @@ const initialWordAsArray = initialWord.split("")
  * covers/home/heading/Heading
  */
 export default ({ coverLoading }) => {
-  const headingAnimationDone = sessionStorage.getItem("heading_animation_done")
+  const headingAnimationDone =
+    typeof window !== `undefined`
+      ? sessionStorage.getItem("heading_animation_done")
+      : false
   const headingRef = useHeadingAnimation({
     initialWordAsArray,
     coverLoading,
