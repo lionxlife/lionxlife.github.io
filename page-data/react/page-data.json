@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-jsx","path":"/react/","result":{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"My second Blog post"},"fields":{"slug":"/testpost-2/"}}},{"node":{"frontmatter":{"title":"My first Blog post"},"fields":{"slug":"/my-firstpost/"}}}]}},"pageContext":{"tag":"react"}}}
