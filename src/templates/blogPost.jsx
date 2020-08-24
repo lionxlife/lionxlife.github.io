@@ -1,12 +1,14 @@
 import React, { useRef } from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import PrevNext from "../components/posts/prevNext"
+// import PrevNext from "../components/posts/prevNext"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Cover from "../components/covers/posts"
 import WritingMain from "../components/bodies/post/writingMain"
 import WritingFooter from "../components/bodies/post/writingFooter"
+import Comments from "../components/posts/comments"
+import CommentsForm from "../components/posts/commentsForm"
 
 function BlogPost({ data, pageContext }) {
   const post = data.markdownRemark
@@ -21,6 +23,8 @@ function BlogPost({ data, pageContext }) {
       <Cover postInfo={post.frontmatter} />
       <WritingMain postContent={post.html} contentRef={contentRef} />
       <WritingFooter />
+      <CommentsForm pageContext={pageContext} />
+      <Comments />
       {/* {post.frontmatter.image && (
           <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
         )} */}
