@@ -38,7 +38,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
-  path: "_data/comments/{options.slug}"
+  path: "data/comments/{options.slug}"
 
   # Text to use as the commit message or pull request title. Accepts placeholders.
   commitMessage: "New comment by {fields.name}, {fields.email}"
