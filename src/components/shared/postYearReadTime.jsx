@@ -14,7 +14,7 @@ export default ({ postYear, wordCount }) => {
         className="is-inline-block"
         style={{ fontSize: "0.5em", margin: "0 0.5rem" }}
       >
-        <i class="far fa-clock"></i>
+        <i className="far fa-clock"></i>
       </span>
       <span>
         <strong>{convertWordsToTime(wordCount)}</strong> min read

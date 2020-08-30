@@ -221,9 +221,9 @@ MODULES styling
   &.override {
     h2,
     h3,
+    h4,
     span {
-      @extend %fontDelius;
-      font-weight: bold;
+      @extend %fontNunito200;
     }
   }
 
@@ -242,7 +242,7 @@ MODULES styling
   }
   h2,
   h3 {
-    margin: 2.5rem 0 1.5rem;
+    margin: 2.5rem 0 0.65rem;
   }
 
   a:hover {
@@ -299,9 +299,11 @@ MODULES styling
     blockquote p:first-child {
       margin-bottom: 2rem;
     }
+
     h2,
-    h3 {
-      margin: 4rem 0 2rem;
+    h3,
+    h4 {
+      margin: 4rem 0 1rem;
     }
 
     ul,

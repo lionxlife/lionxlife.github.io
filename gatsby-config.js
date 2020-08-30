@@ -6,6 +6,21 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    // `gatsby-transformer-yaml`,
+    // query all yaml with a simple query, from: https://www.gatsbyjs.com/plugins/gatsby-transformer-yaml/#configuration-options
+    {
+      resolve: `gatsby-transformer-yaml`,
+      options: {
+        typeName: `Yaml`, // a fixed string
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/comments`,
+        name: `comments`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

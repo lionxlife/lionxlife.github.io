@@ -5,8 +5,8 @@ import { graphql } from "gatsby"
 import "../styles/styles.scss"
 import Layout from "../components/layout"
 import Cover from "../components/covers/home"
-import PostFeedHeading from "../components/bodies/home/postFeedHeading"
-import PostFeed from "../components/bodies/home/postFeed"
+import PostFeedHeading from "../components/home/postFeedHeading"
+import PostFeed from "../components/home/postFeed"
 
 const IndexPage = ({ data }) => {
   const postList = data.allMarkdownRemark

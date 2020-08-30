@@ -1,5 +1,5 @@
 import React from "react"
-import PostYearReadTime from "../../../shared/postYearReadTime"
+import PostYearReadTime from "../../shared/postYearReadTime"
 
 /**
  * components/bodies/home/postFeed/mainPostBlock

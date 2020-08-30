@@ -16,6 +16,7 @@ export default ({ pageContext = {} }) => {
           type="hidden"
           value={pageContext.slug.replace("/", "")}
         />
+        <input name="fields[post]" type="hidden" value={pageContext.slug} />
         <input name="fields[name]" type="text" placeholder="Name" required />
         <input name="fields[email]" type="email" placeholder="Email" required />
         <input name="fields[url]" type="text" placeholder="Website" />

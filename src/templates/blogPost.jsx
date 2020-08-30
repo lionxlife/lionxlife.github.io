@@ -5,26 +5,22 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Cover from "../components/covers/posts"
-import WritingMain from "../components/bodies/post/writingMain"
-import WritingFooter from "../components/bodies/post/writingFooter"
-import Comments from "../components/posts/comments"
-import CommentsForm from "../components/posts/commentsForm"
+import Body from "../components/posts/body"
+import Footer from "../components/posts/footer"
 
 function BlogPost({ data, pageContext }) {
   const post = data.markdownRemark
   const { title } = post.frontmatter
   const { prev, next } = pageContext
   const contentRef = useRef(null)
-  // console.log("page data", data, pageContext)
+  console.log("page data", data, pageContext)
 
   return (
     <Layout pageContext={pageContext} refs={{ contentRef }}>
       <SEO title={title} />
       <Cover postInfo={post.frontmatter} />
-      <WritingMain postContent={post.html} contentRef={contentRef} />
-      <WritingFooter />
-      <CommentsForm pageContext={pageContext} />
-      <Comments />
+      <Body postContent={post.html} contentRef={contentRef} />
+      <Footer pageContext={pageContext} />
       {/* {post.frontmatter.image && (
           <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
         )} */}

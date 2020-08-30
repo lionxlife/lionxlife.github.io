@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import classes from "../../../../helpers/classesHandler"
+import classes from "../../../helpers/classesHandler"
 import MainPostBlock from "./mainPostBlock"
 import PostBlock from "./postBlock"
 import PostPlaceHolderBlock from "./postPlaceHolderBlock"
