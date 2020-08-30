@@ -41,7 +41,7 @@ comments:
   path: "data/comments/{options.slug}"
 
   # Text to use as the commit message or pull request title. Accepts placeholders.
-  commitMessage: "New comment by {fields.name}, {fields.email}"
+  commitMessage: "New comment by {fields.name} {fields.website}"
 
   # (*) REQUIRED
   #
