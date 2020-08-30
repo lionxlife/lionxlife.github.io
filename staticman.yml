@@ -55,8 +55,6 @@ comments:
   generatedFields:
     date:
       type: date
-      options:
-        format: "iso8601"
 
   # Name of the site. Used in notification emails.
   name: "wordsto.me"

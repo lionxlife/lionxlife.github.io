@@ -1,14 +1,25 @@
 import React from "react"
+import CommentsList from "./commentsList"
+import CommentsForm from "./commentsForm"
 
-/**
- * components/posts/comments.jsx
- */
-export default () => {
+export default ({ pageContext, comments }) => {
   return (
-    <div>
-      <hr />
-      <h2>Comments</h2>
-      <p>No comments yet.</p>
-    </div>
+    <section className="section is-p0--top">
+      <div className="container">
+        <div className="columns">
+          <div className="column is-8 is-offset-2">
+            <div className="m-writing override">
+              <hr className="default" />
+              <p>
+                Thanks for reading! You can check out comments below or{" "}
+                <a href="/">other writings</a>. Otherwise, see you again soon?
+              </p>
+            </div>
+            <CommentsList comments={comments} />
+            <CommentsForm pageContext={pageContext} />
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
