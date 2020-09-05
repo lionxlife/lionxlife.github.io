@@ -18,6 +18,4 @@ It is a long established fact that a reader will be distracted by the readable c
 
 Aut ea voluptatem quia dolorem. Nam velit ex eligendi velit fugiat adipisci magnam. Ut vero expedita at consequatur et. Voluptates enim mollitia et ipsum eaque quis.
 
-#### heading 4 - smallest heading supported
-
 Provident qui fuga sed ullam sed. Repellendus rerum culpa explicabo asperiores rerum rerum. Harum fugit vitae ut tempora quia esse nemo blanditiis.

@@ -58,19 +58,10 @@ $delius: "Delius";
 	derive rem values from 16px, it will scale accordingly as the base font size changes throughout the BPs
 */
 html, // should only need to be set on here
-body {
-  @extend %fontNunito200;
+body,
+.f-base {
   font-size: 14px;
   line-height: 1.6;
-
-  strong,
-  b {
-    font-weight: 700;
-  }
-  em,
-  i {
-    font-style: italic;
-  }
 
   @include breakpoint($tablet) {
     font-size: 16px;
@@ -82,6 +73,19 @@ body {
   }
   @include breakpoint($fullhd) {
     font-size: 20px;
+  }
+}
+html,
+body {
+  @extend %fontNunito200;
+
+  strong,
+  b {
+    font-weight: 700;
+  }
+  em,
+  i {
+    font-style: italic;
   }
 }
 
@@ -104,8 +108,7 @@ body {
   }
 }
 
-.f-h2,
-.m-writing h2 {
+.f-h2 {
   // sub heading (bold)
   @extend %fontNunito700;
   font-size: 2rem;
@@ -125,7 +128,7 @@ body {
 }
 
 .f-h3,
-.m-writing h3,
+.m-writing h2,
 .m-writing span {
   // description heading
   @extend %fontNunito700;
@@ -146,7 +149,7 @@ body {
 }
 
 .f-h4,
-.m-writing h4 {
+.m-writing h3 {
   // small heading, or highlight text
   @extend %fontNunito200;
   font-size: 1.3rem;

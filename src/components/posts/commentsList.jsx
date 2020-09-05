@@ -6,7 +6,7 @@ import convertDateTime from "../../helpers/convertDateTime"
  */
 export default ({ comments }) => {
   return (
-    <div>
+    <div className="tw-mb-200">
       <h4 className="f-h4">
         {comments.length ? `${comments.length} comments` : "Comments"}
       </h4>
@@ -24,13 +24,13 @@ const Comment = ({ comment }) => {
   const { day, month, year } = convertDateTime(date)
 
   return (
-    <div className="m-comments__item">
+    <div className="m-comments__item t-animate tw-flex tw-rounded-4px tw-p-50 tw-mb-50 tw-items-center tw-leading-tight">
       <img
-        className="m-comments__thumb"
-        src={`https://www.gravatar.com/avatar/${email}?d=robohash`}
+        className="m-comments__thumb b-bg-white-ter tw-rounded-full tw-mr-50"
+        src={`https://www.gravatar.com/avatar/${email}?d=robohash&s=200`}
       />
       <div>
-        <div>
+        <div className="tw-mb-25">
           <strong>
             {url ? (
               <a
@@ -43,10 +43,10 @@ const Comment = ({ comment }) => {
               name
             )}
           </strong>{" "}
-          on {day} {month} {year}
+          <span className="b-grey-light">on</span> {day} {month} {year}{" "}
+          <span className="b-grey-light">said:</span>
         </div>
-        <hr />
-        <div>{message}</div>
+        {message}
       </div>
     </div>
   )

@@ -4,19 +4,103 @@ BASE CSS
 */
 
 // fix mobile safari from changing font size when orientation is changed
-html { -webkit-text-size-adjust: 100%; }
+html {
+  -webkit-text-size-adjust: 100%;
+}
 
-h1, h2, h3, h4, h5, p, li {
-	margin: 0 0 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  margin: 0 0 1rem;
 
-	&:last-child { margin: 0; }
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .b-link {
-	color: $text;
-			
-	&:hover { 
-		text-decoration: none;
-		color: lighten($text, 15%);
-	}
+  color: $text;
+
+  &:hover {
+    text-decoration: none;
+    color: lighten($text, 15%);
+  }
+}
+
+.b-primary {
+  color: $red-pale;
+}
+.b-bg-primary {
+  background-color: $red-pale;
+}
+.b-black {
+  color: black;
+}
+.b-bg-black {
+  background-color: black;
+}
+.b-black-bis {
+  color: $black-bis;
+}
+.b-bg-black-bis {
+  background-color: $black-bis;
+}
+.b-black-ter {
+  color: $black-ter;
+}
+.b-bg-black-ter {
+  background-color: $black-ter;
+}
+.b-grey-darker {
+  color: $grey-darker;
+}
+.b-bg-grey-darker {
+  background-color: $grey-darker;
+}
+.b-grey-dark {
+  color: $grey-dark;
+}
+.b-bg-grey-dark {
+  background-color: $grey-dark;
+}
+.b-grey {
+  color: $grey;
+}
+.b-bg-grey {
+  background-color: $grey;
+}
+.b-grey-light {
+  color: $grey-light;
+}
+.b-bg-grey-light {
+  background-color: $grey-light;
+}
+.b-grey-lighter {
+  color: $grey-lighter;
+}
+.b-bg-grey-lighter {
+  background-color: $grey-lighter;
+}
+
+.b-white-ter {
+  color: $white-ter;
+}
+.b-bg-white-ter {
+  background-color: $white-ter;
+}
+.b-white-bis {
+  color: $white-bis;
+}
+.b-bg-white-bis {
+  background-color: $white-bis;
+}
+.b-white {
+  color: white;
+}
+.b-bg-white {
+  background-color: white;
 }

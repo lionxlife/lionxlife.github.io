@@ -9,7 +9,7 @@ export default () => {
       <div className="container">
         <div className="columns">
           <div className="column has-text-white">
-            <i className="fas fa-caret-down fa-3x"></i>
+            <i className="fas fa-caret-down fa-3x tw-animate-ping"></i>
           </div>
         </div>
       </div>

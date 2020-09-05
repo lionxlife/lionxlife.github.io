@@ -1,7 +1,9 @@
 /*!
 MAIN CSS
-- imports all bulma SASS + custom SCSS
+- imports all bulma* SASS + custom SCSS
 - minify for production to save kb's
+
+* burma: 0.6.2, 11.1.18; https://github.com/jgthms/bulma/tree/0.6.2
 */
 
 // dependencies
@@ -27,7 +29,7 @@ MAIN CSS
 
 // overrides
 @import "trumps";
+@import "tw-utilities";
 
 // dev (remove pre-production)
 @import "devtools";
-

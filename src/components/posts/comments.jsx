@@ -10,7 +10,7 @@ export default ({ pageContext, comments }) => {
           <div className="column is-8 is-offset-2">
             <div className="m-writing override">
               <hr className="default" />
-              <p>
+              <p className="tw-mt-400">
                 Thanks for reading! You can check out comments below or{" "}
                 <a href="/">other writings</a>. Otherwise, see you again soon?
               </p>

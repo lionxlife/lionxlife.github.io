@@ -23,7 +23,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "tailwindcss": "^1.8.2"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
@@ -46,7 +47,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "tailwind-build": "tailwind build ./src/styles/tailwindcss/tw-utilities-source.css -c ./tailwind.config.js -o ./src/styles/tw-utilities.css"
   },
   "repository": {
     "type": "git",

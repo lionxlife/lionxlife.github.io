@@ -205,3 +205,7 @@ TRUMPS CSS
     outline: none;
   }
 }
+
+.t-animate {
+  @include animate(default);
+}

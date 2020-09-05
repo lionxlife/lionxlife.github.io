@@ -24,6 +24,31 @@ MODULES styling
   }
 }
 
+.m-forms {
+  &__input {
+    border: 1px solid $white-ter;
+
+    &:hover {
+      border-color: $grey-lighter;
+    }
+
+    &.is-required {
+      &:focus {
+        outline-color: $red-pale;
+      }
+    }
+  }
+
+  &__submit {
+    background-color: $grey-lighter;
+
+    &:hover {
+      background-color: $grey-dark;
+      color: white;
+    }
+  }
+}
+
 .m-landing {
   height: 100vh;
   min-height: 31rem;
@@ -321,17 +346,19 @@ MODULES styling
 
 .m-comments {
   &__item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1rem;
+    border: 1px solid $white-ter;
 
-    hr {
-      margin: 0.4rem 0;
+    &:hover {
+      border-color: $grey-lighter;
+
+      .m-comments__thumb {
+        animation: bounce 1s infinite !important;
+      }
     }
   }
 
   &__thumb {
-    border-radius: 100%;
-    background-color: $white-ter;
+    width: 4rem;
+    height: 4rem;
   }
 }
