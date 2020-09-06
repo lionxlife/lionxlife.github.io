@@ -23,11 +23,12 @@ li {
 }
 
 .b-link {
-  color: $text;
+  color: $primary;
+  cursor: pointer;
+  text-decoration: none;
 
   &:hover {
-    text-decoration: none;
-    color: lighten($text, 15%);
+    text-decoration: underline;
   }
 }
 
@@ -103,4 +104,10 @@ li {
 }
 .b-bg-white {
   background-color: white;
+}
+.b-green {
+  color: $green;
+}
+.b-bg-green {
+  background-color: $green;
 }

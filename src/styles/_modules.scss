@@ -24,14 +24,18 @@ MODULES styling
   }
 }
 
-.m-forms {
-  &__input {
+.m-base {
+  &-c-border {
     border: 1px solid $white-ter;
 
     &:hover {
       border-color: $grey-lighter;
     }
+  }
+}
 
+.m-forms {
+  &__input {
     &.is-required {
       &:focus {
         outline-color: $red-pale;
@@ -346,11 +350,7 @@ MODULES styling
 
 .m-comments {
   &__item {
-    border: 1px solid $white-ter;
-
     &:hover {
-      border-color: $grey-lighter;
-
       .m-comments__thumb {
         animation: bounce 1s infinite !important;
       }
