@@ -31,7 +31,7 @@ const Comment = ({ comment }) => {
     <div className="m-comments__item m-base-c-border t-animate tw-flex tw-rounded-4px tw-p-50 tw-mb-50 tw-items-center tw-leading-tight">
       <img
         className="m-comments__thumb b-bg-white-ter tw-rounded-full tw-mr-50"
-        src={`https://www.gravatar.com/avatar/${email}?d=robohash&s=200`}
+        src={`https://www.gravatar.com/avatar/?d=robohash&s=200`}
       />
       <div>
         <div className="tw-mb-25">

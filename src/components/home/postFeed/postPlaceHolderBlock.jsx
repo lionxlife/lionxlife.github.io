@@ -8,7 +8,6 @@ export default () => {
     <div className="column is-6">
       <a
         target="_self"
-        href="test"
         className="m-pfeed__post m-pfeed__post--sec is-block t-relative no-overflow t-cursor-def"
       >
         <div

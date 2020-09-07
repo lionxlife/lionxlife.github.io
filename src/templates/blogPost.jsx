@@ -53,25 +53,26 @@ export const query = graphql`
         description
       }
     }
-  }
-`
-
-/**
-allYaml(filter: { post: { eq: $slug } }) {
-  edges {
-    node {
-      _id
-      name
-      message
-      link
-      date
-      parent {
-        ... on File {
+    allYaml(filter: { post: { eq: $slug } }) {
+      edges {
+        node {
+          _id
           name
-          relativeDirectory
+          message
+          link
+          date
+          parent {
+            ... on File {
+              name
+              relativeDirectory
+            }
+          }
         }
       }
     }
   }
-}
+`
+
+/**
+  if you clear comments again, stick gql allYaml here so things don't break
  */
