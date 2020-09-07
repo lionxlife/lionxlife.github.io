@@ -14,7 +14,7 @@ export default () => {
       <ImageCover setCoverLoading={setCoverLoading} />
       <Heading coverLoading={coverLoading} />
       <Bottom />
-      <NextButton />
+      <NextButton coverLoading={coverLoading} />
     </section>
   )
 }

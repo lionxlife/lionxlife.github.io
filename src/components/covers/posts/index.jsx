@@ -12,9 +12,9 @@ export default ({ postInfo }) => {
     <section className="m-landing no-overflow t-relative">
       <Loading />
       <ImageCover postInfo={postInfo} setCoverLoading={setCoverLoading} />
-      <Heading postInfo={postInfo} />
+      <Heading postInfo={postInfo} coverLoading={coverLoading} />
       <Bottom />
-      <NextButton />
+      <NextButton coverLoading={coverLoading} />
     </section>
   )
 }

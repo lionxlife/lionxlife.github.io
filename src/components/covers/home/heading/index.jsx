@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import generateInitialWord from "./generateInitialWord"
 import useHeadingAnimation from "./useHeadingAnimation"
 
@@ -22,7 +22,11 @@ export default ({ coverLoading }) => {
   return (
     <div className="m-landing__heading t-absolute has-text-centered has-text-white t-align--mid">
       <span className="m-landing__h1-home f-h1 cu-text-shadow" ref={headingRef}>
-        {generateInitialWord({ initialWordAsArray, headingAnimationDone })}
+        {generateInitialWord({
+          initialWordAsArray,
+          headingAnimationDone,
+          coverLoading,
+        })}
       </span>
     </div>
   )

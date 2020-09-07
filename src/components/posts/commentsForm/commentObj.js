@@ -15,12 +15,8 @@ export default pageSlug => ({
     label: "fields[name]",
     value: "",
   },
-  email: {
-    label: "fields[email]",
-    value: "",
-  },
-  url: {
-    label: "fields[url]",
+  link: {
+    label: "fields[link]",
     value: "",
   },
 })

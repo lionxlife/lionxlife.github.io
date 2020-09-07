@@ -8,8 +8,7 @@ export default ({
   post,
   message,
   name,
-  email,
-  url,
+  link,
   handleChange,
   submitForm,
 }) => {
@@ -37,23 +36,14 @@ export default ({
           required
         />
         <input
-          name="email"
-          type="email"
-          placeholder="Email"
+          name="link"
+          type="text"
+          placeholder="website, social media or email"
           className="tw-flex-grow tw-p-50 f-base tw-rounded-4px t-animate m-base-c-border tw-min-w-0"
-          pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
-          value={email.value}
+          value={link.value}
           onChange={handleChange}
         />
       </div>
-      <input
-        name="url"
-        type="text"
-        placeholder="Website"
-        className="tw-p-50 f-base tw-rounded-4px t-animate m-base-c-border tw-mb-50"
-        value={url.value}
-        onChange={handleChange}
-      />
       <div>
         <button
           type="submit"

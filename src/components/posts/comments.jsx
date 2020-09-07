@@ -12,7 +12,8 @@ export default ({ pageContext, comments }) => {
               <hr className="default" />
               <p className="tw-mt-400">
                 Thanks for reading! You can check out comments below or{" "}
-                <a href="/">other writings</a>. Otherwise, see you again soon?
+                <a href="/#jsto-anchor-content">other writings</a>. Otherwise,
+                see you again soon?
               </p>
             </div>
             <CommentsList comments={comments} />

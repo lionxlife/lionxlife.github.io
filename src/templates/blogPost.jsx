@@ -10,7 +10,7 @@ import Comments from "../components/posts/comments"
 
 function BlogPost({ data, pageContext }) {
   const post = data.markdownRemark
-  const comments = data.allYaml.edges
+  const comments = (data.allYaml || {}).edges || []
   const { title } = post.frontmatter
   const { prev, next } = pageContext
   const contentRef = useRef(null)
@@ -53,23 +53,25 @@ export const query = graphql`
         description
       }
     }
-    allYaml(filter: { post: { eq: $slug } }) {
-      edges {
-        node {
-          _id
+  }
+`
+
+/**
+allYaml(filter: { post: { eq: $slug } }) {
+  edges {
+    node {
+      _id
+      name
+      message
+      link
+      date
+      parent {
+        ... on File {
           name
-          message
-          email
-          date
-          url
-          parent {
-            ... on File {
-              name
-              relativeDirectory
-            }
-          }
+          relativeDirectory
         }
       }
     }
   }
-`
+}
+ */

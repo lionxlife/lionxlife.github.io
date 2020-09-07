@@ -44,7 +44,7 @@ const FormContent = ({
   submitForm,
   resetForm,
 }) => {
-  const { slug, post, message, name, email, url } = newComment
+  const { slug, post, message, name, link } = newComment
   // console.log("test", newComment, name)
 
   if (submitting) return <FormStates isSubmitting />
@@ -52,8 +52,6 @@ const FormContent = ({
   if (error) return <FormStates isError resetForm={resetForm} />
 
   return (
-    <Form
-      {...{ slug, post, message, name, email, url, handleChange, submitForm }}
-    />
+    <Form {...{ slug, post, message, name, link, handleChange, submitForm }} />
   )
 }

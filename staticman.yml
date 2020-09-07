@@ -7,7 +7,7 @@ comments:
   #
   # Names of the fields the form is allowed to submit. If a field that is
   # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "email", "url", "message", "post"]
+  allowedFields: ["name", "link", "message", "post"]
 
   # Names of required fields. If any of these isn't in the request or is empty,
   # an error will be thrown.
@@ -41,7 +41,7 @@ comments:
   path: "data/comments/{options.slug}"
 
   # Text to use as the commit message or pull request title. Accepts placeholders.
-  commitMessage: "New comment by {fields.name} {fields.email} {fields.url}"
+  commitMessage: "New comment by {fields.name} {fields.link} for {options.slug}"
 
   # (*) REQUIRED
   #
@@ -58,25 +58,21 @@ comments:
 
   # Name of the site. Used in notification emails.
   name: "wordsto.me"
-
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
   # with Mailgun, which you can get for free at http://mailgun.com.
   #notifications:
   # Enable notifications
   #enabled: true
-
   # (!) ENCRYPTED
   #
   # Mailgun API key
   #apiKey: "1q2w3e4r"
-
   # (!) ENCRYPTED
   #
   # Mailgun domain (encrypted)
   #domain: "4r3e2w1q"
-
   # List of transformations to apply to any of the fields supplied. Keys are
   # the name of the field and values are possible transformation types.
-  transforms:
-    email: md5
+  # transforms:
+  #   email: md5

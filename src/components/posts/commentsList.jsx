@@ -24,7 +24,7 @@ export default ({ comments }) => {
 }
 
 const Comment = ({ comment }) => {
-  const { date, name, email, url, message } = comment
+  const { date, name, link, message } = comment
   const { day, month, year } = convertDateTime(date)
 
   return (
@@ -36,11 +36,8 @@ const Comment = ({ comment }) => {
       <div>
         <div className="tw-mb-25">
           <strong>
-            {url ? (
-              <a
-                href={url.indexOf("http") === -1 ? `https://${url}` : url}
-                target="_blank"
-              >
+            {link ? (
+              <a href={processLink(link)} target="_blank">
                 {name}
               </a>
             ) : (
@@ -54,4 +51,12 @@ const Comment = ({ comment }) => {
       </div>
     </div>
   )
+}
+
+const processLink = link => {
+  // email
+  if (link.indexOf("@") > 0) return `mailto:${link}`
+
+  // otherwise website
+  return link.indexOf("http") === -1 ? `https://${link}` : link
 }
