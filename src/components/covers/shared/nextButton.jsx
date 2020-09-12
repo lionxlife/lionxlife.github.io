@@ -3,7 +3,7 @@ import { CONTENT_BOOKMARK_ID } from "../../../helpers/constants"
 import smoothscroll from "smoothscroll-polyfill"
 
 // kick off the polyfill!
-smoothscroll.polyfill()
+if (typeof window !== `undefined`) smoothscroll.polyfill()
 
 /**
  * CoverNextButton

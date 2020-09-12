@@ -90,3 +90,23 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
+
+/**
+ * handle packages that require window to be defined
+ * customizing webpack config to replace offending module with dummy one during server rendering
+ * https://www.gatsbyjs.com/docs/debugging-html-builds/#fixing-third-party-modules
+ */
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /smoothscroll-polyfill/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
