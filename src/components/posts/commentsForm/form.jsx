@@ -39,7 +39,7 @@ export default ({
           name="link"
           type="text"
           placeholder="website, social media or email"
-          className="tw-flex-grow tw-p-50 f-base tw-rounded-4px t-animate m-base-c-border tw-min-w-0"
+          className="tw-flex-grow tw-p-50 f-base tw-rounded-4px t-animate m-base-c-border tw-min-w-0 m-forms__input"
           value={link.value}
           onChange={handleChange}
         />
