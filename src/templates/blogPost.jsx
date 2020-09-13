@@ -1,20 +1,20 @@
 import React, { useRef } from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
-// import PrevNext from "../components/posts/prevNext"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Cover from "../components/covers/posts"
 import Body from "../components/posts/body"
 import Comments from "../components/posts/comments"
+import "../styles/styles.scss"
+// import Img from "gatsby-image"
+// import PrevNext from "../components/posts/prevNext"
 
 function BlogPost({ data, pageContext }) {
   const post = data.markdownRemark
   const comments = (data.allYaml || {}).edges || []
   const { title } = post.frontmatter
-  const { prev, next } = pageContext
   const contentRef = useRef(null)
-  console.log("page data", data, pageContext)
+  // const { prev, next } = pageContext
 
   return (
     <Layout pageContext={pageContext} refs={{ contentRef }}>

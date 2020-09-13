@@ -1,12 +1,11 @@
 import React from "react"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
-// import Image from "../components/Image"
-import "../styles/styles.scss"
 import Layout from "../components/layout"
 import Cover from "../components/covers/home"
 import PostFeedHeading from "../components/home/postFeedHeading"
 import PostFeed from "../components/home/postFeed"
+import "../styles/styles.scss"
 
 const IndexPage = ({ data }) => {
   const postList = data.allMarkdownRemark
