@@ -5,22 +5,23 @@ import React from "react"
  */
 export default () => {
   return (
-    <div className="column is-6">
-      <a
-        target="_self"
-        className="m-pfeed__post m-pfeed__post--sec is-block t-relative no-overflow t-cursor-def"
-      >
-        <div
-          className="m-pfeed__bg t-absolute"
-          style={{ backgroundImage: "url(/images/post-placeholder.jpg)" }}
-        ></div>
-        <div className="t-absolute m-pfeed__info m-pfeed__info--sec">
-          <h2 className="f-h3 has-text-white cu-text-shadow">#null</h2>
-          <span className="has-text-white m-pfeed__stats">
-            ...words in transit
+    <div className="column is-one-quarter-desktop is-half">
+      <div className="m-pfeed__post">
+        <div className="m-pfeed__image t-relative no-overflow">
+          <div
+            className="m-pfeed__bg t-absolute"
+            style={{ backgroundImage: "url(/images/post-placeholder.jpg)" }}
+          ></div>
+        </div>
+        <div className="m-pfeed__info no-overflow">
+          <h2 className="f-h4 has-text-black m-pfeed__heading no-m">
+            Words in transit...
+          </h2>
+          <span className="has-text-black m-pfeed__stats">
+            Stay tuned folks.
           </span>
         </div>
-      </a>
+      </div>
     </div>
   )
 }

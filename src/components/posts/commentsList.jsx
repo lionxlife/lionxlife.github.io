@@ -1,5 +1,7 @@
 import React from "react"
 import convertDateTime from "../../helpers/convertDateTime"
+import moment from "moment"
+import { calcBlogYear } from "../header/timer/useTimer"
 
 /**
  * components/posts/comments.jsx
@@ -44,7 +46,13 @@ const Comment = ({ comment }) => {
               name
             )}
           </strong>{" "}
-          <span className="b-grey-light">on</span> {day} {month} {year}{" "}
+          <span className="b-grey-light">on year</span>{" "}
+          {calcBlogYear(
+            moment(`${day}-${month}-${year}`, "DD-MMM-YYYY").diff(
+              moment("01-05-2017", "DD-MM-YYYY"),
+              "seconds"
+            )
+          )}{" "}
           <span className="b-grey-light">said:</span>
         </div>
         {message}

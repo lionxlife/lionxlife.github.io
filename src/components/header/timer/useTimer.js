@@ -6,7 +6,8 @@ import makeNumberTwoDigits from "../../../helpers/makeNumberTwoDigits"
  * diff time in secs now from 1.5.2017
  * months is 0 based, hence May is 4
  */
-const diffTimeInSecs = () => moment().diff(moment([2017, 4, 1]), "seconds")
+const diffTimeInSecs = () =>
+  moment().diff(moment("01-05-2017", "DD-MM-YYYY"), "seconds")
 const diffTimeInSecsToday = () =>
   moment().diff(moment().startOf("day"), "seconds")
 const realSecToBlogDayNumber = 0.004224537037037037
@@ -16,8 +17,8 @@ const realSecToBlogDayNumber = 0.004224537037037037
  * divide 60 = hours
  * divide 24 = days
  */
-export const calcBlogYear = () => {
-  return Math.floor(diffTimeInSecs() / 60 / 60 / 24)
+export const calcBlogYear = fromDate => {
+  return Math.floor((fromDate ? fromDate : diffTimeInSecs()) / 60 / 60 / 24)
 }
 
 export const calcBlogDay = () => {
