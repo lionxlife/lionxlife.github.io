@@ -36,7 +36,7 @@ export const listQuery = graphql`
             postYear
             image {
               childImageSharp {
-                resize(width: 2000, quality: 75) {
+                resize(width: 1000, quality: 75) {
                   src
                 }
               }

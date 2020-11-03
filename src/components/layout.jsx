@@ -9,7 +9,7 @@ import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Footer from "./footer"
+import Footer from "./footer/index"
 
 const Layout = ({ children, pageContext = {}, refs = {} }) => {
   const data = useStaticQuery(graphql`

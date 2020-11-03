@@ -2,11 +2,11 @@
 MODULES styling
 - contains modules large & small (m-*)
 
-	@include breakpoint($mobplus) {}
-	@include breakpoint($tablet) {}
-	@include breakpoint($desktop) {}
-	@include breakpoint($widescreen) {}
-	@include breakpoint($fullhd) {}
+	@include breakpoint($mobplus) {} 480px (?)
+	@include breakpoint($tablet) {} 769px (?)
+	@include breakpoint($desktop) {} 1024px (960px)
+	@include breakpoint($widescreen) {} 1216px (1152px)
+	@include breakpoint($fullhd) {} 1408px (container: 1344px)
 */
 
 /*! REUSABLE MODULES
@@ -159,12 +159,23 @@ MODULES styling
 -------------------------------------------------------- */
 // post feed
 .m-pfeed {
+  max-width: 2560px;
+
   &__post {
-    padding: 0 0 3rem;
+    margin: 0 0 3rem;
 
     &:hover {
       .m-pfeed__bg {
         transform: scale(1.05);
+      }
+    }
+
+    &.is-placeholder {
+      opacity: 0.25;
+      @include animate(default);
+
+      &:hover {
+        opacity: 1;
       }
     }
   }

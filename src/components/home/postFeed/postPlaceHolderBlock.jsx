@@ -6,7 +6,7 @@ import React from "react"
 export default () => {
   return (
     <div className="column is-one-quarter-desktop is-half">
-      <div className="m-pfeed__post">
+      <div className="m-pfeed__post is-placeholder">
         <div className="m-pfeed__image t-relative no-overflow">
           <div
             className="m-pfeed__bg t-absolute"

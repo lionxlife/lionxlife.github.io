@@ -18,7 +18,7 @@ const Header = ({ isPost, refs, siteTitle }) => {
       <header className="header t-fixed" ref={refHeader}>
         <div className="section is-p0 t-relative">
           {/* header contents */}
-          <div className="container">
+          <div className="container is-fluid">
             <div className="columns">
               <div className="column">
                 <div className="header__container t-relative">

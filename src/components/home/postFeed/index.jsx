@@ -8,7 +8,7 @@ export default ({ postList }) => {
   const postPlaceholders = Array.from(Array(4 - postList.edges.length))
 
   return (
-    <section className="section is-p0--top is-default">
+    <section className="section is-p0--top is-default m-pfeed t-align--cen-m">
       <div className="container is-fluid">
         <div className="columns is-multiline">
           {postList.edges.map(({ node }, i) => (
