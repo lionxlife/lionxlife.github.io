@@ -49,7 +49,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy": "gatsby build && gh-pages -d public -b master -a",
     "tailwind-build": "tailwind build ./src/styles/tailwindcss/tw-utilities-source.css -c ./tailwind.config.js -o ./src/styles/tw-utilities.css"
   },
   "repository": {
