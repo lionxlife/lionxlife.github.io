@@ -39,7 +39,7 @@ const Comment = ({ comment }) => {
         <div className="tw-mb-25">
           <strong>
             {link ? (
-              <a href={processLink(link)} target="_blank">
+              <a href={processLink(link)} target="_blank" rel="noreferrer">
                 {name}
               </a>
             ) : (

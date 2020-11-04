@@ -151,13 +151,13 @@ GLOBALS styling
     }
   }
 
-  &__twitter {
-    color: $navy-pale;
+  &__smedia {
+    color: $navy-pale !important;
     opacity: 0.33;
-    cursor: default;
+    @include animate(default);
 
     &:hover {
-      color: $navy-pale;
+      opacity: 1;
     }
   }
 }

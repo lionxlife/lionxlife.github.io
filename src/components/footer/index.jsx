@@ -18,9 +18,24 @@ export default () => {
                 “{arrayShuffle(QUOTES)[0]}”
               </p>
               <p>
-                {/* <a href="#" className="footer__twitter" title="later ;)">
-                  <i className="fab fa-twitter"></i>
-                </a>{" "} */}
+                <a
+                  href="https://medium.com/@lionxlife"
+                  target="_blank"
+                  className="footer__smedia"
+                  title="LXL – Medium"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-medium-m"></i>
+                </a>{" "}
+                <a
+                  href="https://www.instagram.com/wordsto.me/"
+                  target="_blank"
+                  className="footer__smedia"
+                  title="@wordsto.me • Instagram"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>{" "}
                 <strong>Lion X Life</strong> / Year{" "}
                 <span id="fn-footer-year">{calcBlogYear()}</span>
               </p>
