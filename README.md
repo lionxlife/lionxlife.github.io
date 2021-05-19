@@ -1,44 +1,36 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby's default starter
+  Starter
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Modified from default starter.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+1.  **Get dev running**
 
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    # ensure packages are installed + updated
+    yarn
+
+    # start dev (2 options, both same)
+    yarn start
+    yarn develop
     ```
 
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+1.  **Deploy changes including comments to master**
 
     ```shell
-    cd my-default-starter/
-    gatsby develop
+    yarn deploy
     ```
 
-1.  **Open the source code and start editing!**
+1.  **WARNING**
 
-    Your site is now running at `http://localhost:8000`!
+    Be careful of `yarn clean` as it will clean out your `public` folder. Even though some things are re-generated, other static files aren't.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    To make the website work, you're going to need at least 1 page and 1 comment. When you go to publish the 1st piece, you can replace the placeholder page. Perhaps you can make a 2nd page with the same comment, then delete the previous page.
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Could be a manual thing - not sure. Pls update these instructions when you get to it.
 
 ## 🧐 What's inside?
 
