@@ -4,8 +4,9 @@ description: The first step in my 1000 day journey into the unknown to find and 
 postYear: 1890
 date: "2023-06-25"
 image: "cover.jpg"
-tags: ["writing", "thoughts", "life", "living-well" ]
-wordCount: 1620
+tags: ["writing", "thoughts", "life", "living-well"]
+wordCount: 1604
+version: 2.4
 ---
 
 <span>This is it.</span>
@@ -36,15 +37,15 @@ It’s not just me right? Don’t many of us wish we were here? To not be manage
 
 You might ask, why didn’t you do what you love before?
 
-Well, I don’t know—it’s complicated.
+I don’t know—it’s complicated.
 
-Firstly, 1-2 decades ago there were significantly fewer creative “internet” jobs, so even more so than today, if you were privileged you’d take your best pick at what you—a clueless teen or young “adult”—think you “love” that *pays*. Then full of hunger to progress and prove yourself you launch into it, at first it's all about this and the game-changing full-time salary takes the backseat (gotta make it past the steep learning curve to keep that salary).
+Firstly, 1-2 decades ago there were significantly fewer creative “internet” jobs, so even more so than today, if you were privileged you’d take your best pick at what you—a clueless teen or young “adult”—think you “love” that _pays_. Then full of hunger to progress and prove yourself you launch into it, at first it's all about this and the game-changing full-time salary takes the backseat (gotta make it past the steep learning curve to keep that salary).
 
-But then after countless long days into years of grinding, rinse and repeat, the shine wears and suddenly the passion is gone and it’s somehow just the money, or people, or familiarity, or even the comfort anchoring you here. Somehow, just somehow, the mixing of passion and money, over time, even the dream job somehow is morphed into an ongoing, seemingly endless nightmare.
+But then after countless long days into years of grinding, rinse and repeat, the shine wears and suddenly the passion is gone and it’s somehow just the money, or people, or familiarity, or comfort anchoring you here. Somehow, just somehow, the mixing of passion and money, over time, even the dream job somehow is morphed into an ongoing, seemingly endless nightmare.
 
 What then? You might have a family to feed, or a mortgage, or some other debt to service, or heck—you're too old to redo; you’re kind of locked in aren’t you? It isn’t that easy to just drop everything and start over for something you finally realised you love ...or think you love.
 
-Complicated, right?
+Complicated.
 
 Maybe passion, like creativity, needs to be free; not undisciplined or inconsistent, but just free to pause, to rest, to change, and to evolve with time.
 
@@ -52,19 +53,19 @@ Though, even if this situation is complicated and hard, what other choice is the
 
 Thus—having no other options—I embark on now. For the next 1000 days, I embark on a journey of creative expression and connection, with these words marking the first step.
 
-21 pieces total. With this as 1, then another 20 to go. Writing, drawing, designing, making a video, an app (or apps), maybe even a website, a game, or whatever else fitting—I want to do it all.
+21 pieces total. With this as 1, then another 20 to go. Writing, drawing, designing, making a video, an app, a website, a game, or whatever else fitting—I want to do it all.
 
 It’s a pretty wild thing to do in your 30s.
 
 In my society, in these cultures and circles, the more approved thing is to advance to management, or senior roles and beyond in your career, get that salary to 6 figures and buy those big shiny things, all while looking like you are doing well and on top of it.
 
-And maybe you are, maybe this is your hill. I would gladly celebrate that with you. I have friends thriving in the corporate world; they love their work, the people they work with and the nice salary and benefits that come with it. It's a great spot if you could find it, I wish everyone could say it was so (though not necessarily of the corporate world).
+And maybe you are, maybe this is your hill. I would gladly celebrate that with you. I have friends thriving in the corporate world; they love their work, the people they work with and the nice salary and benefits that come with it. It's a great spot if you could find it (though not necessarily of the corporate world).
 
 You could say, that ultimately is what I wish for myself and everyone. It is the absence of that in my life that kickstarted this journey. I just wanted to be sure about the important matters, because death can unexpectedly visit any of us at any time.
 
 Yep, _that_ death. That thing our society seems to hush up well, always seemingly delivered formally addressing distant people far away, unrelated to you, to your world—until one day when it is.
 
-The other thing that bugs me when keeping on course by societal standards is that if I work "exceedingly" hard (to "exceed" their expectations), day in and day out, perhaps by the end of the year my bosses will drive into work with another nice car (only semi-joking). But really I just feel like it’s their dream I’m building—not mine—and if my time happens to be up, then all I could say is that regretfully I was too afraid to fight for my dream, so I sold my time to sail someone else’s dream.
+The other thing that bugs me when keeping on course by societal standards is that if I work "exceedingly" hard (to "exceed" those KPIs), day in and day out, perhaps by the end of the year my bosses will drive into work with another nice car (only semi-joking). But really I just feel like it’s their dream I’m building—not mine—and if my time happens to be up, then all I could say is that regretfully I was too afraid to fight for my dream, so I sold my time to sail someone else’s dream.
 
 You can even read all about it in <a href="https://en.wikipedia.org/wiki/The_Top_Five_Regrets_of_the_Dying" target="_blank">The Top 5 Regrets of the Dying</a>. Then perhaps you might see clearly the end from the beginning. How many people would have done things differently had they known how things would turn out?
 
@@ -82,7 +83,7 @@ Let all those who were barely alive awaken to their purpose entirely.
 
 Is it also your time? What will you do?
 
-As for me, let me just try. I might fail, but I might also succeed. I might even just find the unknown I longed for. Maybe you will too, or already have. And then, where shall we be friends?
+As for me, let me just _try_. I might fail, but I might also succeed. I might even just find the unknown I longed for. Maybe you will too, or already have. And then, where shall we be friends?
 
 I hope we can meet often.\
 The journey is just beginning.
