@@ -5,8 +5,8 @@ postYear: 1890
 date: "2023-06-25"
 image: "cover.jpg"
 tags: ["writing", "thoughts", "life", "living-well"]
-wordCount: 1604
-version: 2.4
+wordCount: 1590
+version: 2.5
 ---
 
 <span>This is it.</span>
