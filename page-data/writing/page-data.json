@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-jsx","path":"/writing/","result":{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"A promise to live strong"},"fields":{"slug":"/a-promise-to-live-strong/"}}}]}},"pageContext":{"tag":"writing"}},"staticQueryHashes":["3649515864"]}
+{"componentChunkName":"component---src-templates-tags-jsx","path":"/writing/","result":{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"A promise to live strong"},"fields":{"slug":"/a-promise-to-live-strong/"}}}]}},"pageContext":{"tag":"writing"}}}
