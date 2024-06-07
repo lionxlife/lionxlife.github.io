@@ -1,7 +1,7 @@
 export default pageSlug => ({
   slug: {
     label: "fields[slug]",
-    value: pageSlug.replace("/", ""),
+    value: pageSlug.replaceAll("/", ""),
   },
   post: {
     label: "fields[post]",
