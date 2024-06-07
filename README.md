@@ -1,9 +1,16 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <h1 align="center">
-  Starter
+  Starter (modified)
 </h1>
 
-Modified from default starter.
+## 📝 Note
+
+I got this to work with the following packages:
+
+1. node `v14.21.3`
+2. `node-gyp@5.1.1` (with "rU" fix to "r" in `/node-gyp/gyp/pylib/gyp/input.py`)
+3. yarn `v1.22.22` (v2 also worked previously)
+4. Python `v3.12.3` (native "python3" symlink to "python")
 
 ## 🚀 Quick start
 
