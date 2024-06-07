@@ -14,7 +14,7 @@ module.exports = {
   // ogLanguage: 'en_US', // Facebook Language
   // googleAnalyticsID: '',
   staticmanApi:
-    "https://staticmanlxl.herokuapp.com/v3/entry/github/lionxlife/lionxlife.github.io/dev/comments",
+    "https://comment-worker.8c97d9b3-3b3c-491a-aae1-a042a2588f46.workers.dev/api/handle/form",
 
   // JSONLD / Manifest
   // favicon: '/images/made-mistakes-logo.png', // Used for manifest favicon generation
