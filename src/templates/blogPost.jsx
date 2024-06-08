@@ -57,6 +57,7 @@ export const query = graphql`
       edges {
         node {
           _id
+          id
           name
           message
           link
