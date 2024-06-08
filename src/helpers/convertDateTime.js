@@ -3,7 +3,7 @@
  * helpers/convertDateTime
  */
 export default iso8701 => {
-  const d = new Date(iso8701)
+  const d = new Date(String(iso8701))
   const dtf = new Intl.DateTimeFormat("en", {
     year: "numeric",
     month: "short",

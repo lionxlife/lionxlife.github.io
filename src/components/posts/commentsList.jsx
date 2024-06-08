@@ -2,19 +2,22 @@ import React from "react"
 import convertDateTime from "../../helpers/convertDateTime"
 import moment from "moment"
 import { calcBlogYear } from "../header/timer/useTimer"
+import convertBlogYear from "../../helpers/convertBlogYear"
 
 /**
  * components/posts/comments.jsx
  */
 export default ({ comments }) => {
+  const orderedComments = comments.length ? processComments(comments) : false
+
   return (
     <div className="tw-mb-200">
       <h4 className="f-h4">
-        {comments.length ? `${comments.length} comments` : "Comments"}
+        {orderedComments ? `${orderedComments.length} comments` : "Comments"}
       </h4>
-      {comments.length ? (
-        comments.map(comment => (
-          <Comment key={comment.node._id} comment={comment.node} />
+      {orderedComments ? (
+        orderedComments.map(comment => (
+          <Comment key={comment.node.id} comment={comment.node} />
         ))
       ) : (
         <div className="m-base-c-border t-animate tw-flex tw-rounded-4px tw-p-50 tw-pl-100 tw-items-center tw-leading-tight">
@@ -28,12 +31,15 @@ export default ({ comments }) => {
 const Comment = ({ comment }) => {
   const { date, name, link, message } = comment
   const { day, month, year } = convertDateTime(date)
+  const randomAvatar = `https://robohash.org/${Math.floor(
+    Math.random() * 1000
+  )}.png?size=200x200&set=set4` // set4 = cats; https://robohash.org/
 
   return (
     <div className="m-comments__item m-base-c-border t-animate tw-flex tw-rounded-4px tw-p-50 tw-mb-50 tw-items-center tw-leading-tight">
       <img
         className="m-comments__thumb b-bg-white-ter tw-rounded-full tw-mr-50"
-        src={`https://www.gravatar.com/avatar/?d=robohash&s=200`}
+        src={randomAvatar}
       />
       <div>
         <div className="tw-mb-25">
@@ -59,6 +65,23 @@ const Comment = ({ comment }) => {
       </div>
     </div>
   )
+}
+
+const processComments = comments => {
+  // each comment have new key of blogYear from date field
+  const commentsBY = comments.map(comment => {
+    return {
+      node: {
+        ...comment.node,
+        blogYear: convertBlogYear(comment.node.date),
+      },
+    }
+  })
+
+  // sort comments by blogYear
+  return commentsBY.sort((a, b) => {
+    return a.node.blogYear - b.node.blogYear
+  })
 }
 
 const processLink = link => {
