@@ -12,6 +12,8 @@ I got this to work with the following packages:
 3. yarn `v1.22.22` (v2 also worked previously)
 4. Python `v3.12.3` (native "python3" symlink to "python")
 
+PS: don't judge me, this was made in 2020. Might update this to next.js one day...
+
 ## 🚀 Quick start
 
 1.  **Get dev running**
